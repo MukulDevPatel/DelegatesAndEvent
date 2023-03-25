@@ -11,7 +11,7 @@ namespace DelegatesAndEvents
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\n1. Single cast delegate\n2. MultiCastDelegate\n3. Exit");
+                Console.WriteLine("\n1. Single cast delegate\n2. MultiCast Delegate\n3. Event Demo\n4. Exit");
                 int select = Convert.ToInt32(Console.ReadLine());
                 switch (select)
                 {
@@ -25,6 +25,10 @@ namespace DelegatesAndEvents
                         multi.Run();
                         break;
                     case 3:
+                        EventDemo demo = new EventDemo();
+                        demo.Run();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
